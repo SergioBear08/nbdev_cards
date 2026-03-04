@@ -1,0 +1,9 @@
+project:
+  output-dir: _docs
+
+website:
+  title: "nbdev_cards"
+  site-url: "https://SergioBear08.github.io/nbdev_cards"
+  description: "create repo using lib nbdev"
+  repo-branch: main
+  repo-url: "https://github.com/SergioBear08/nbdev_cards"

@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nbdev_cards"
+dynamic = ["version"]
+description = "create repo using lib nbdev"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "Apache-2.0"}
+authors = [{name = "Serj", email = "m9165055080@gmail.com"}]
+keywords = ['nbdev']
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+]
+dependencies = []
+
+[project.urls]
+Repository = "https://github.com/SergioBear08/nbdev_cards"
+Documentation = "https://SergioBear08.github.io/nbdev_cards/"
+
+[project.entry-points.nbdev]
+nbdev_cards = "nbdev_cards._modidx:d"
+
+[tool.setuptools.dynamic]
+version = {attr = "nbdev_cards.__version__"}
+
+[tool.setuptools.packages.find]
+include = ["nbdev_cards"]
+
+[tool.nbdev]
